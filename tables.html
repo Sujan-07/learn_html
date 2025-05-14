@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table creation</title>
+    <link rel="icon" href="images/html_logo_300x300.png" type="images/png">
+</head>
+<body>
+    <style>
+        table,tr,td,th,caption{
+            border: 1px solid black;
+            background-color: greenyellow;
+            padding: 0.5rem;
+            border-collapse: collapse;
+        }
+    </style>
+    <table>
+        <caption><strong>Daily Routine</strong></caption>
+        <thead>
+            <tr>
+                <th>&nbsp;<!--gives space--></th>
+                <th>Time</th>
+                <th>Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Morning</th>
+                <td><time datetime="7:00">7am</time>-<time datetime="8:45">8:45am</time></td>
+                <td>study time</td>
+            </tr>
+            <tr>
+                <th>Work</th>
+                <td><time datetime="9:00">9am</time>-<time datetime="4:45">4:45pm</time></td>
+                <td>college time</td>
+            </tr>
+            <tr>
+                <th>Essentiality</th>
+                <td><time datetime="6:00">7pm</time>-<time datetime="7:45">7:45pm</time></td>
+                <td>tution time</td>
+            </tr>
+            <tr>
+                <th>Free Time</th>
+                <td rowspan="2">other Time</td>
+                <td>Play</td>
+            </tr>
+            <tr>
+                <th>Night</th>
+                <td>Sleep</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><center>Eat, Sleep and Code daily</center></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
